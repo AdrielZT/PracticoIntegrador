@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Tienda de libros</title>
+    </head>    
+
+    <body>
+        <section>
+            <h2>Tienda de libros</h2>
+        
+            <div>
+                <p><label> Titulo: <input type="text" placeholder="titulo" id="titulo" required></label></p>
+                <p><label> Precio: <input type="number" placeholder="precio" id="precio" required></label></p>
+                <button id="btnAgregar">Agregar libros</button>
+            </div>   
+        </section>
+
+        <section id="productos">
+            <h2>Libros Disponibles</h2>
+            <div id="lista-productos">
+                <!-- Aquí se agregarán los productos dinámicamente -->
+            </div>
+        </section>
+
+        <section id="carrito">
+            <h2>Carrito de compras</h2>
+            <ul id="lista-carrito"></ul>
+            <p><strong>Total:</strong> $<span id="total">0</span></p>
+        </section>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
